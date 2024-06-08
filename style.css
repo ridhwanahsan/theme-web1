@@ -1,0 +1,515 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* header section style start */
+header{
+    display: inline-block;
+}
+.header-area{
+    width: 100%;
+ background-color: #7AB259;
+ display: flex;
+justify-content: space-around;
+ text-align: center;
+}
+ 
+ .header-image{
+    margin-top: 12px;
+    
+ }
+ .header-image img{
+    width: 150px;
+    height: 50px;
+    display: block;
+ }
+.header-li{
+   
+    display: flex;
+}
+.header-li li{
+   padding: 10px;
+    list-style-type: none;
+}
+.header-li li a{
+   text-decoration: none;
+   font-size: 22px;
+   color: rgb(51, 51, 51);
+}
+.header-li li a:hover{
+   color: black;
+   border-bottom: 4px solid #c6fda5;
+}
+.header-menu{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.btn-h{
+    margin: auto;
+}
+ .btn-header a{
+    text-decoration: none;
+    color: #ffff;
+ }
+ .btn-header{
+   margin-left: 10px;
+    padding: 10px 40px;
+     background-color: black;
+     color: #ffff;
+     font-size: 18px;
+     border-radius: 5px;
+ }
+/* header section style end */
+
+/* hero section start */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Hero Section Styles */
+#hero-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.hero-content button {
+    padding: 15px 30px;
+    background-color: #7AB259;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: #f1cd2d;
+}
+
+.hero-img img {
+    max-width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .hero-section-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: none;
+        margin-bottom: 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* hero section end */
+
+/* brand section start */
+.brand-area{
+    padding: 8px;
+    text-align: center;
+     margin-top: 150px;
+     margin-bottom: 250px;
+}
+.brand-area img{
+    padding: 0px 40px;
+}
+/* brand section end */
+/* service section style */
+ /* General Styles */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Service Section Styles */
+#service-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+#service-section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+#service-section h1 span {
+    color: #e74c3c;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-image img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.service-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #777;
+    line-height: 1.5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .service-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* service section style */
+ 
+
+/* Work Section Styles start */
+/* Work Section Styles */
+#work-section {
+    padding: 50px 0;
+    text-align: center;
+    background: #111430;
+}
+
+.work-area h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.work-area h3 span {
+    color: #e74c3c;
+}
+
+.slider-section {
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.slider {
+    display: flex;
+    animation: slide 10s infinite;
+}
+
+.slider img {
+    width: 50%;
+    height: auto;
+    padding: 30px;
+}
+
+/* Animation for sliding */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    45% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    70% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    95% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(-400%);
+    }
+}
+
+
+
+/* work-section  style end*/
+
+/* feed back area style */
+  
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Feedback Section Styles */
+#feedback-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.feedback-area {
+    text-align: center;
+}
+
+.feedback-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.feedback-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.avata-content {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+}
+
+.avata-img {
+    position: relative;
+}
+
+.avata-img img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.avata-header {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.avata-header h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.avata-header h6 {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #777;
+}
+
+.feedback-text {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.feedback-text p {
+    font-size: 1rem;
+    color: #777;
+    line-height: 1.5;
+}
+
+/* feed back area style */
+
+/* about section style */
+/* General Styles */
+ 
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* About Section Styles */
+#about-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.about-area {
+    display: grid;
+    place-items: center;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.about-text-area {
+    padding: 20px;
+}
+
+.about-text-area h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-text-area p {
+    font-size: 1rem;
+    color: #777;
+    line-height: 1.5;
+}
+
+.about-form-section {
+    display: grid;
+    gap: 15px;
+    padding: 20px;
+}
+
+.about-form-section form {
+    display: grid;
+    gap: 15px;
+}
+
+.about-form-section input[type="email"],
+.about-form-section input[type="text"],
+.about-form-section textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.about-form-section textarea {
+    height: 150px;
+    resize: none;
+}
+
+.about-form-section input[type="button"] {
+    padding: 15px;
+    background-color: #7AB259;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.about-form-section input[type="button"]:hover {
+    background-color: #e6cb35;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* about section style */
+
+/* copyright-section */
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Copyright Section Styles */
+#copyright-section {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#copyright-section p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* copyright-section */

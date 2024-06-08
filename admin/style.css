@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Service Box Styles */
+.service-box {
+    padding: 50px 0;
+}
+
+.main-content {
+    display: flex;
+}
+
+.menu-list {
+    flex: 0 0 20%;
+    padding-right: 20px;
+}
+
+.menu-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-list ul li {
+    margin-bottom: 10px;
+}
+
+.menu-list ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.service-form-list {
+    flex: 1;
+}
+
+.service-form-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.service-form-list th, .service-form-list td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.service-form-list th {
+    background-color: #f2f2f2;
+}
+
+.service-form-list tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .menu-list {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+}
+.button-btn {
+    text-align: left;
+}
+.button-btn a {
+     color: #fff;
+     text-decoration: none;
+     font-size: 18px;
+}
+
+.button-btn button {
+    padding: 10px 20px;
+    background-color: #7AB259;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button-btn button:hover {
+    background-color: #ecde1a;
+}
